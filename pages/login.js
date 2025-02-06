@@ -40,16 +40,16 @@ const Candx_login = () => {
 				<div className={styles.login_logo}>
 					<img className={styles.login_logo} src="rcf_logo_172_X_155.png" alt="Logo" />
 				</div>
-				<div style={{fontFamily: 'sans-serif', fontStyle: 'normal', fontWeight: 700, fontSize: '24px', lineHeight: '32px' 
+				<div style={{fontStyle: 'normal', marginBottom: '10px', marginTop: '10px', fontWeight: 700, fontSize: '24px', lineHeight: '32px' 
 				}}>Login to RCF eTest Trials</div>
-				<div style={{width: '312px', height: '22px', fontFamily: 'sans-serif', fontStyle: 'normal', fontWeight: 400,
+				<div style={{width: '312px', height: '22px', fontStyle: 'normal', fontWeight: 400,
 					fontSize: '14px', lineHeight: '22px', padding:'none',textAlign:'center'}}> Fill in details appropriately to begin your quiz
 				</div>
 				<div className={styles.frame8}>
 					<div className={styles.frame4}>
 						<form method="" action="" autoComplete="off" onSubmit={handleSubmit}>
-							<label>Full Name</label>
-							<input type="text" name="user_id" id="user_id" placeholder="Full Name (Surname Firstname Othername)" value={name} onChange={(e) => setName(e.target.value)}
+							<label style={{fontSize: "16px",}}>Full Name</label>
+							<input type="text" name="user_id" id="user_id" placeholder="Full Name (Surname Firstname Other-optional)" value={name} onChange={(e) => setName(e.target.value)}
 							className={styles.input}/>
 							<br/>
 							<label>Course Code</label>

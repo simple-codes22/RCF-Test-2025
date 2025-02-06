@@ -1,4 +1,5 @@
 /** RCF E-TRIAL QUIZ APP STYLESHEET**/
+
 .body{
 	width: 100%;
 	/* min-height: 100vh; */
@@ -128,6 +129,9 @@
 	width: 334px;
 	height: 86px;
 }
+.input::placeholder {
+	font-size: 14px;
+}
 
 .course_name{
 	width: 136px;
@@ -201,7 +205,10 @@
 	color:white;
 	position:absolute;
 	text-align: center;
+	font-size: 15px;
 	bottom: 10px;
+	left: 0; 
+	right:0;
 }
 
 .genfooter{
@@ -294,6 +301,7 @@
 }
 
 .loginbtn{
+	cursor: pointer;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -304,9 +312,9 @@
 	height: 48px;
 	background: #1488CC;
 	border-radius: 4px;
-	font-family: sans-serif;
+	/* font-family: sans-serif; */
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 16px;
 	line-height: 22px;
 	color: #FDFEFF;

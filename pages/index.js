@@ -146,6 +146,7 @@ import Head from 'next/head';
 import { parse } from 'cookie';
 import styles from '../assets/css/styles.module.css';
 
+
 const SelectCourse = ({ name, id }) => {
 	const disableChm101 = id.toLowerCase() !== 'chm101';//done 10:40AM
 	const disablePhy101 = id.toLowerCase() !== 'phy101';
