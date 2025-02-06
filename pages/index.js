@@ -184,7 +184,7 @@ const SelectCourse = ({ name, id }) => {
 				<text className={styles.course_name}>CHM 101<br/></text>
 				<em className={styles.ctitle}>General Chemistry I</em>
 				20 Questions in 15 Minutes<br/>
-				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "quizchm111"} disabled={disableChm101}>Start Quiz</button>
+				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "quizchm111"} /*disabled={disableChm101}*/>Start Quiz</button>
 			</div>
 		</div>
 		   <div className={styles.col}>
