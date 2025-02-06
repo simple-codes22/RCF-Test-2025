@@ -1,11 +1,12 @@
 /** RCF E-TRIAL QUIZ APP STYLESHEET**/
 .body{
-	width: auto;
-	height: auto;
-	margin: 0;
+	width: 100%;
+	/* min-height: 100vh; */
+	margin: 0 !important;
 	padding: 0;
-	background: #FFFFFF;
-	zoom: 88%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* background: #FFFFFF; */
+	/* zoom: 100%; */
 }
 
 .header{
@@ -189,18 +190,18 @@
 /**Login page**/
 .login_bg{
 	/* position: relative; */
+	margin: 0;
+	padding: 0;
 	width: 100%;
-	height: 670px;
+	min-height: 100vh;
 	background: #1488CC;
 }
 .footer{
 	/* background-color: red; */
 	color:white;
 	position:absolute;
-	margin-top: 600px;
 	text-align: center;
-	margin-left:40%;
-	margin-right:40%;
+	bottom: 10px;
 }
 
 .genfooter{

@@ -64,7 +64,7 @@ const Candx_login = () => {
 					</div>
 				</div>
 			</div>
-			<footer className={styles.footer}>Designed by RCF dev Team (2023 - 2024)</footer>
+			<footer className={styles.footer}>Designed by RCF dev Team (2025)</footer>
 		</div>
 	</div>
   );
