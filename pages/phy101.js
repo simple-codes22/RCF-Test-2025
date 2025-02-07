@@ -3,7 +3,7 @@ import { GetServerSideProps } from 'next';
 import { parse } from 'cookie';
 import styles from '../assets/css/styles.module.css';
 import Quiz from "../components/examDisp";
-import { quizData } from "../constants/phy113";
+import { quizData } from "../constants/phy101";
 import { useState, useEffect } from 'react';
 
 const StartQuiz = ({ name, id }) => {
