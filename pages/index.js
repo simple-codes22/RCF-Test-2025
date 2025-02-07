@@ -185,7 +185,7 @@ const SelectCourse = ({ name, id }) => {
 				<text className={styles.course_name}>CHM 101<br/></text>
 				<em className={styles.ctitle}>General Chemistry I</em>
 				20 Questions in 15 Minutes<br/>
-				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "quizchm111"} /*disabled={disableChm101}*/>Start Quiz</button>
+				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "chm101"} /*disabled={disableChm101}*/>Start Quiz</button>
 			</div>
 		</div>
 		   <div className={styles.col}>
@@ -196,7 +196,7 @@ const SelectCourse = ({ name, id }) => {
 			<text className={styles.course_name}>PHY 101<br/></text>
 			<em className={styles.ctitle}>General Physics I</em>
 				20 Questions in 20 Minutes<br/>
-				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "quizphy113"} disabled={disablePhy101}>Start Quiz</button>
+				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "phy101"} disabled={disablePhy101}>Start Quiz</button>
 			</div>
 		</div>
       </div>
@@ -209,10 +209,10 @@ const SelectCourse = ({ name, id }) => {
 					<text className={styles.course_name}>MAT 101<br/></text>
 					<em className={styles.ctitle}>Elementary Mathematics  I</em>
 					20 Questions in 20 Minutes<br/>
-					<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "quizmat111"} disabled={disableMat101}>Start Quiz</button>
+					<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "mat101"} disabled={disableMat101}>Start Quiz</button>
 				</div>
 			</div>
-			<div className={styles.col}>
+			{/* <div className={styles.col}>
 			<div className={styles.left}>
 				<img className={styles.course_icon} src="rcf_logo_172_X_155.png" alt="Logo" />
 			</div>
@@ -221,11 +221,11 @@ const SelectCourse = ({ name, id }) => {
 				<em className={styles.ctitle}>Elementary Mathematics III</em>
 				20 Questions in 15 Minutes<br/>
 				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "quizmat112"} disabled={disableMat113}>Start Quiz</button>
-			</div>
-		</div>
+			</div> */}
+		{/* </div> */}
       </div>
-	  	<div className={styles.row}>
-               <div className={styles.col}>
+	  	{/* <div className={styles.row}>
+            <div className={styles.col}>
 			<div className={styles.left}>
 				<img className={styles.course_icon} src="rcf_logo_172_X_155.png" alt="Logo" />
 			</div>
@@ -240,15 +240,15 @@ const SelectCourse = ({ name, id }) => {
 			<div className={styles.left}>
 				<img className={styles.course_icon} src="rcf_logo_172_X_155.png" alt="Logo" />
 			</div>
-			{/* <div className={styles.right}>
+			<div className={styles.right}>
 			<text className={styles.course_name}>STA 117<br/></text>
 			<em className={styles.ctitle}>Statistics</em>
 				20 Questions in 15 Minutes<br/>
 				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "quizsta117"}>Start Quiz</button>
-			</div> */}
+			</div>
 		</div>
-      </div>
-      {/* <div className={styles.row}>
+      </div> */}
+    {/* <div className={styles.row}>
                <div className={styles.col}>
 			<div className={styles.left}>
 				<img className={styles.course_icon} src="rcf_logo_172_X_155.png" alt="Logo" />
@@ -269,7 +269,7 @@ const SelectCourse = ({ name, id }) => {
 				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "quizmattest"}>Start Quiz</button>
 			</div> }
 		</div>
-      </div> */} 
+      </div> */}
       </div>
     </div>
   );

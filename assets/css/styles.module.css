@@ -1,5 +1,7 @@
 /** RCF E-TRIAL QUIZ APP STYLESHEET**/
 
+
+
 .body{
 	width: 100%;
 	/* min-height: 100vh; */
@@ -165,6 +167,8 @@
 	background: #1488CC;
 	border-radius: 4px;
 	border: none;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
 }
 
 .StartQuiz_btn:hover{
@@ -190,6 +194,7 @@
 	background: red;
 	border-radius: 4px;
 	border: none;
+	cursor: pointer;
 }
 /**Login page**/
 .login_bg{
