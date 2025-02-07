@@ -148,9 +148,9 @@ import styles from '../assets/css/styles.module.css';
 
 
 const SelectCourse = ({ name, id }) => {
-	const disableChm101 = id.toLowerCase() !== 'chm101';//done 10:40AM
-	const disablePhy101 = id.toLowerCase() !== 'phy101';
-	const disableMat101 = id.toLowerCase() !== 'mat101';//done 12:10PM
+	const disableChm101 = id.toLowerCase() !== 'chm101';// Not Done TEST
+	const disablePhy101 = id.toLowerCase() !== 'phy101';// Not Done TEST
+	const disableMat101 = id.toLowerCase() !== 'mat101';// Not Done TEST
 	const disableMat113 = id.toLowerCase() !== 'mat113';
 	const disablePhy103 = id.toLowerCase() !== 'phy103';	
 
@@ -163,17 +163,19 @@ const SelectCourse = ({ name, id }) => {
       <div className={styles.header}>
         <img className={styles.logo} src="/rcf_logo_172_X_155.png" alt="RCF_Logo" width="48" height="48"/>
         <div className={styles.user_info}>
-		<div className={styles.time}>
-			<button className={styles.Logout} onClick={() => window.location.href = "login"}>Log Out</button>
-		</div>
-          <img className={styles.ImgCircle} src="avatar.png" alt="img" width="57" height="51"/>
+			<div className={styles.time}>
+				<button className={styles.Logout} onClick={() => window.location.href = "login"}>Log Out</button>
+			</div>
+          	<img className={styles.ImgCircle} src="avatar.png" alt="img" width="57" height="51"/>
           <div>
             <span className={styles.userid}>{id}</span><br/>
             <span className={styles.user}>{name}</span>
           </div>
         </div>
       </div>
-      <h3 className={styles.instruction}>Select a Course to take Quiz</h3>
+	  <div style={{display: 'flex', textAlign: "center", width: "100%", justifyContent: 'center'}}>
+      	<h3 className={styles.instruction}>Select a Course to take Quiz</h3>
+	  </div>
       <div className={styles.container}>
         
 	  <div className={styles.row}>
