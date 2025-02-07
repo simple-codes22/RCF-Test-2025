@@ -211,7 +211,9 @@ const SelectCourse = ({ name, id }) => {
 					<text className={styles.course_name}>MAT 101<br/></text>
 					<em className={styles.ctitle}>Elementary Mathematics  I</em>
 					20 Questions in 20 Minutes<br/>
-					<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "mat101"} disabled={disableMat101}>Start Quiz</button>
+					<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "mat101"} 
+					// disabled={disableMat101}
+						>Start Quiz</button>
 				</div>
 			</div>
 			{/* <div className={styles.col}>

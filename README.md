@@ -16,7 +16,9 @@ This is a quiz app for freshers in Federal University of Technology, Minna. The 
 ## Technologies
 - NextJS
 - PHP
-- NGINX
+- MySQL
+- PouchDB
+- XAMPP
 
 ## Contribution
 To contribute to this project, follow the steps below:
