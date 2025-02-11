@@ -12,6 +12,7 @@ export const quizData = {
       options: ['{21,22,24,25,27}', '{21,25,27,29}', '{21,27,28}', '{21,25,27,29,33,34}'],
       answer: '{21,25,27,29,33,34}'
     },
+    
     {
       question: '3. If A = { ( x, y ) : y² = 4} and B = { ( x, y ) : y² = 16}, find the elements of A n B ',
       options: ['{2,4}', '{1,2}', '{1,4}', '{2,2}'],
