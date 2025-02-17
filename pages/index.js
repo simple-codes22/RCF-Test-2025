@@ -151,8 +151,8 @@ const SelectCourse = ({ name, id }) => {
 	const disableChm101 = id.toLowerCase() !== 'chm101';// Not Done TEST
 	const disablePhy101 = id.toLowerCase() !== 'phy101';// Not Done TEST
 	const disableMat101 = id.toLowerCase() !== 'mat101';// Not Done TEST
-	const disableMat113 = id.toLowerCase() !== 'mat113';
-	const disablePhy103 = id.toLowerCase() !== 'phy103';	
+	// const disableMat113 = id.toLowerCase() !== 'mat113';
+	// const disablePhy103 = id.toLowerCase() !== 'phy103';	
 
   return (
     <div className={styles.body}>
