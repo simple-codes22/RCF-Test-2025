@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const Candx_login = () => {
 	const [name, setName] = useState('');
-	const [id, setId] = useState('');
+	const [id, setId] = useState('CHM101'); // Change priority later
 	
 	const handleSubmit = async (event) => {
     	event.preventDefault();
