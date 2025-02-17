@@ -1,7 +1,6 @@
 /** RCF E-TRIAL QUIZ APP STYLESHEET**/
 
 
-
 .body{
 	width: 100%;
 	/* min-height: 100vh; */
@@ -10,6 +9,20 @@
 	font-family: sans-serif;
 	/* background: #FFFFFF; */
 	/* zoom: 100%; */
+}
+.body > * {
+	transition: all .3s ease-in-out
+}
+
+.congrats {
+	width: 100%;
+	/* min-height: 100vh; */
+	margin: 0 !important;
+	padding: 0;
+	font-family: sans-serif;
+	background: url('./../img/Auth.jpg');
+	background-size: contain;
+	min-height: 100vh;
 }
 
 .header{
@@ -25,6 +38,13 @@
 	right: 150px;
 	top: 20px;
 	/* background-color: red; */
+}
+.congHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-top: 10px;
 }
 
 .ImgCircle{	
@@ -363,6 +383,10 @@
 	color: #FDFEFF;
 	margin-top: 30px;
 	border: none;
+	transition: all .2s ease-in-out
+}
+.loginbtn:hover {
+	background: #127ab7;
 }
 
 .loginbtn2{
@@ -387,10 +411,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 5px;
+	padding: 20px;
 	position: absolute;
 	width: 400px;
-	height: 300px;
+	/* height: 300px; */
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
