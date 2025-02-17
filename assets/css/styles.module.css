@@ -300,6 +300,7 @@
 	font-size: 16px;
 	line-height: 22px;
 	outline: 0;
+	margin-top: 8px;
 	padding-left: 20px;
 	transition: all 0.3s ease-in-out;
 }
@@ -310,7 +311,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 85%;
-	margin-top: 10px;
+	margin-top: 8px;
 	height: 40px;
 	border: 1px solid #D9D9D9;
 	border-radius: 4px;
