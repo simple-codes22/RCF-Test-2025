@@ -59,7 +59,7 @@ const Candx_login = () => {
 							<select name="id" className={styles.select} onChange={(e) => setId(e.target.value)}>
 								<option className={styles.option} value="CHM101">CHM 101</option>
 								<option className={styles.option} value="PHY101">PHY 101</option>
-								<option className={styles.option} value="MAT101" selected>MAT 101</option>
+								<option className={styles.option} value="MAT101">MAT 101</option>
 							</select>
 							<button className={styles.loginbtn}>LOGIN</button>
 						</form>
