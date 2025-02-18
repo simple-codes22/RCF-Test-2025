@@ -430,30 +430,49 @@ if (autoSubmitted) {
         </div>
       ) : (
         <div className={styles.examQuestion}>
-          <h2 className={styles.ques}>{quizData.questions[currentQuestion].question}</h2>
-          <ul>
+          <h2>{quizData.questions[currentQuestion].question}</h2>
+          <div className={styles.questionLi}>
             {quizData.questions[currentQuestion].options.map(
               (option, index) => (
-                <li key={index}>
-                  <label>
+                <div className="li" key={index} style={{marginBlock: '20px'}}>
+                  <label style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                    paddingBlock: "17px",
+                    border: '1.2px solid #e6e5fa',
+                    paddingInline: '14px',
+                    borderRadius: '10px'
+                  }}>
                     <input
                       type="radio"
                       value={option}
                       checked={answers[currentQuestion] === option}
                       onChange={handleAnswerSelect}
                     />
-                    {option}
+                    <div style={{paddingLeft: "20px", display: 'inline'}}>
+                      {option}
+                    </div>
                   </label>
-                </li>
+                </div>
               )
             )}
-          </ul>
-          <button className={styles.prevBtn} onClick={handlePrev} disabled={currentQuestion === 0}>Previous</button>
-          {currentQuestion === quizData.questions.length - 1 ? (
-            <button className={styles.subBtn} onClick={handleQuizSubmit}>Submit</button>
-          ) : (
-            <button className={styles.nextBtn} onClick={handleNext}>Next</button>
-          )}
+          </div>
+          
+          <div style={{
+            display: 'flex',
+            // justifyContent: 'space-between',
+            marginTop: '20px',
+            alignSelf: 'center'
+          }}>
+            <button className={styles.prevBtn} onClick={handlePrev} disabled={currentQuestion === 0}>Previous</button>
+            {currentQuestion === quizData.questions.length - 1 ? (
+              <button className={styles.subBtn} onClick={handleQuizSubmit}>Submit</button>
+            ) : (
+              <button className={styles.nextBtn} onClick={handleNext}>Next</button>
+            )}
+          </div>
+
         </div>
       )}
       <div className={styles.progress_box}>

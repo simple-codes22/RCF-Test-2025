@@ -147,35 +147,42 @@
 }
 
 .examQuestion{
-  font-family: sans-serif;
+  /* width: 100%; */
+	background-color: #fafafa; /*#E5E5E5*/
+  width: 80%;
+	color: black;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 .examQuestion h2{
   font-size: 1.5rem;
+  margin-block: 25px;
   /* color: black; */
 }
-.examQuestion li{
+.li{
   font-size: 1rem;
-  padding: 5px 10px;
-  border: 2px solid black;
-  width: 300px;
-  height: 38px;
-  margin: 5px 0;
-  display: flex;
-  border-radius: 5px;
+  margin-block: 20px;
+  /* padding: 5px 10px; */
+  /* border: 2px solid black; */
+  /* width: 300px; */
+  /* height: 38px; */
+  /* margin: 5px 0; */
+  /* display: flex; */
+  /* border-radius: 5px; */
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
   background-color: white;
 }
-.ques{
-  color:white;
-}
+
 .nextBtn {
   height: 40px;
   width: 120px;
   border-radius: 5px;
   border: none;
-  background-color: #65CF63;
+  background-color: #017b18;
   color: white;
   margin: 0 20px;
 }
@@ -185,8 +192,8 @@
   width: 120px;
   border-radius: 5px;
   border: none;
-  background-color: #1488CC;
-  color: white;
+  background-color: #e4f1f8;
+  color: #000;
 }
 .subBtn{
   height: 40px;
