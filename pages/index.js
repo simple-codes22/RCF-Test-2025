@@ -155,10 +155,10 @@ const SelectCourse = ({ name, id }) => {
 	// const disablePhy103 = id.toLowerCase() !== 'phy103';	
 
   return (
-    <div className={styles.body}>
+    <div className={styles.body} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
       <Head>
         <link rel="icon" href="/rcf_logo_172_X_155.png" />
-        <title>Select Course</title>
+        <title>READ THE INSTRUCTIONS CAREFULLY</title>
       </Head>
       <div className={styles.header}>
         <img className={styles.logo} src="/rcf_logo_172_X_155.png" alt="RCF_Logo" width="48" height="48"/>
@@ -174,23 +174,33 @@ const SelectCourse = ({ name, id }) => {
         </div>
       </div>
 	  <div style={{display: 'flex', textAlign: "center", width: "100%", justifyContent: 'center'}}>
-      	<h3 className={styles.instruction}>Select a Course to take Quiz</h3>
+      	<h3 className={styles.instruction}>Read the Instructions Carefully</h3>
 	  </div>
-      <div className={styles.container}>
-        
-	  <div className={styles.row}>
-        <div className={styles.col}>
-			<div className={styles.left}>
-				<img className={styles.course_icon} src="/rcf_logo_172_X_155.png" alt="Logo" />
+      <div className={styles.container} style={{maxWidth: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+		<div>
+
+			Before you begin your quiz, please take a moment to read the instructions <b>carefully.</b>
+
+			<ul>
+
+				<li style={{marginBlock: "10px"}}><b>CHM101:</b> Pay attention to chemical equations and units. Precision matters!</li>
+				<li style={{marginBlock: "10px"}}><b>MAT101:</b> Double-check your calculations and formulas. A small mistake can change everything.</li>
+				<li style={{marginBlock: "10px"}}><b>PHY101:</b> Read each question thoroughly—sometimes, the key to solving it is in the details.</li>
+			
+			</ul>  
+
+			<div>
+				🎯 <i>"Success is the sum of small efforts, repeated day in and day out."</i> – Robert Collier
 			</div>
-			<div className={styles.right}>
-				<text className={styles.course_name}>CHM 101<br/></text>
-				<em className={styles.ctitle}>General Chemistry I</em>
-				20 Questions in 15 Minutes<br/>
-				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "chm101"} /*disabled={disableChm101}*/>Start Quiz</button>
+
+			<div style={{marginTop: "20px"}}>
+				Good luck! 🚀
 			</div>
 		</div>
-		   <div className={styles.col}>
+
+		<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "chm101"} disabled={false}>Start Quiz</button>
+        
+		   {/* <div className={styles.col}>
 			<div className={styles.left}>
 				<img className={styles.course_icon} src="/rcf_logo_172_X_155.png" alt="Logo" />
 			</div>
@@ -200,9 +210,9 @@ const SelectCourse = ({ name, id }) => {
 				20 Questions in 20 Minutes<br/>
 				<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "phy101"} disabled={disablePhy101}>Start Quiz</button>
 			</div>
-		</div>
-      </div>
-	  <div className={styles.row}>
+		</div> */}
+      {/* </div> */}
+	  {/* <div className={styles.row}>
 			<div className={styles.col}>
 				<div className={styles.left}>
 					<img className={styles.course_icon} src="rcf_logo_172_X_155.png" alt="Logo" />
@@ -215,7 +225,7 @@ const SelectCourse = ({ name, id }) => {
 					// disabled={disableMat101}
 						>Start Quiz</button>
 				</div>
-			</div>
+			</div> */}
 			{/* <div className={styles.col}>
 			<div className={styles.left}>
 				<img className={styles.course_icon} src="rcf_logo_172_X_155.png" alt="Logo" />
@@ -275,7 +285,7 @@ const SelectCourse = ({ name, id }) => {
 		</div>
       </div> */}
       </div>
-    </div>
+    // </div>
   );
 };
 
