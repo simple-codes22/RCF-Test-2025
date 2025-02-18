@@ -10,7 +10,7 @@ const StartQuiz = ({ name, id }) => {
   const [autoSubmitted, setAutoSubmitted] = useState(false);
 
   const CountdownTimer = () => {
-    const [countdown, setCountdown] = useState(19000); // 1200 seconds = 20 minutes
+    const [countdown, setCountdown] = useState(1200); // 1200 seconds = 20 minutes
     useEffect(() => {
       const timer = setInterval(() => {
         setCountdown((prevCountdown) => prevCountdown - 1);
