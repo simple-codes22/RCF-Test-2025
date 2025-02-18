@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 .main {
   display: flex;
   flex-direction: column;
@@ -109,7 +111,7 @@
   padding-right: 15px;
 }
 .courseTitle{
-  font-family: sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
 .courseTitle h3{
   color: black;
@@ -149,7 +151,7 @@
 .examQuestion{
   /* width: 100%; */
 	background-color: #fafafa; /*#E5E5E5*/
-  width: 80%; 
+  width: 94%; 
   /* Figure the issue with width */
 	color: black;
   padding: 10px 30px;
@@ -158,11 +160,13 @@
   justify-content: center;
   border-radius: 20px;
   border: 1.7px solid #e0dfff;
+  font-family: 'Source Sans 3', sans-serif;
 
 }
 .examQuestion h2{
   font-size: 1.3rem;
   margin-block: 15px;
+  font-family: 'Source Sans 3', sans-serif;
   /* color: black; */
 }
 
@@ -191,6 +195,8 @@ input[type=checkbox] + label:before{
   padding: 15px 25px;
   cursor: pointer;
   margin-inline: 20px;
+  font-size: 17px;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 .prevBtn{
@@ -201,21 +207,24 @@ input[type=checkbox] + label:before{
   padding: 15px 25px;
   cursor: pointer;
   margin-inline: 20px;
+  font-size: 16px;
+  font-family: 'Source Sans 3', sans-serif;
 }
 .subBtn{
-  height: 40px;
-  width: 120px;
   border-radius: 5px;
   border: none;
-  background-color: red;
+  background-color: rgb(237, 1, 1);
   color: white; 
   margin: 0 20px;
+  padding: 15px 25px;
   cursor: pointer;
+  font-size: 16px;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 .progress_box{
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 	/* align-items: flex-end; */
 	/* padding: 20px; */
 	/* position: absolute; */
@@ -246,19 +255,7 @@ input[type=checkbox] + label:before{
 }
 
 .progress_content{
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  align-content: center;
-  justify-content: center;
-  /* margin: auto; */
-	padding: 20px;
-	gap: 12px;
-	width: 80vw;
-  margin: 0;
-  padding-top: 0;
-	height: 160px;
+	 margin-top: 10px;
 	/* border: 1px solid #D9D9D9; */
 	border-radius: 8px 0px 8px 8px;
 }
@@ -269,9 +266,9 @@ input[type=checkbox] + label:before{
 	align-items: flex-start;
 	padding: 0px;
 	gap: 12px;
-	width: 80vw;
+	/* width: 80vw; */
 	height: 32px;
-  font-family: sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 .progress_num{
@@ -281,8 +278,9 @@ input[type=checkbox] + label:before{
 	align-items: center;
 	padding: 4px;
 	gap: 10px;
-	width: 32px;
-	height: 32px;
+  font-size: 18px;
+	width: 28px;
+	height: 28px;
 	background: #1488CC;
 	border-radius: 4px;
   color: white;

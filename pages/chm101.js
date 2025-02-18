@@ -90,15 +90,13 @@ const StartQuiz = ({ name, id }) => {
           <h3 className={styles.instruction}>
             CHM101: General Chemistry I
           </h3>
-          <div>
-            <Quiz
-              quizData={quizData}
-              autoSubmitted={autoSubmitted}
-              setAutoSubmitted={setAutoSubmitted}
-              name={name}
-              id={id}
-            />
-          </div>
+          <Quiz
+            quizData={quizData}
+            autoSubmitted={autoSubmitted}
+            setAutoSubmitted={setAutoSubmitted}
+            name={name}
+            id={id}
+          />
         </div>
 
       </div>

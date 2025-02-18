@@ -423,7 +423,7 @@ if (autoSubmitted) {
   const backgroundColors = answers.map((answer, index) => answer !== "" ? '#353275' : '#ecf2f6');
 
   return (
-    <div>
+    <div style={{display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
       {showScore ? (
         <div>
           <h2>{`You scored ${score} out of ${quizData.questions.length}`}</h2>

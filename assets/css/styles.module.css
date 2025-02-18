@@ -91,6 +91,7 @@
 }
 
 .instruction{
+	font-family: 'Source Sans 3', sans-serif;
 	/* position: absolute; */
 	/* text-align: center; */
 	/* margin-left: 50px; */
@@ -450,6 +451,7 @@
 
 /**Start Quiz**/
 .timer{
+	font-family: 'Source Sans 3', sans-serif;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
