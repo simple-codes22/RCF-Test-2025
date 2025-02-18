@@ -198,7 +198,7 @@ const SelectCourse = ({ name, id }) => {
 			</div>
 		</div>
 
-		<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "phy101"} disabled={false}>Start Quiz</button>
+		<button className={styles.StartQuiz_btn} onClick={() => window.location.href = "chm101"} disabled={false}>Start Quiz</button>
         
 		   {/* <div className={styles.col}>
 			<div className={styles.left}>
