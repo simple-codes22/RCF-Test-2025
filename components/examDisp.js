@@ -420,47 +420,72 @@ if (autoSubmitted) {
   //  localStorage.removeItem('savedAnswers'); 
 };
 
-  const backgroundColors = answers.map((answer, index) => answer !== "" ? 'red' : '#1488CC');
+  const backgroundColors = answers.map((answer, index) => answer !== "" ? '#353275' : '#ecf2f6');
 
   return (
-    <div>
+    <div style={{display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
       {showScore ? (
         <div>
           <h2>{`You scored ${score} out of ${quizData.questions.length}`}</h2>
         </div>
       ) : (
         <div className={styles.examQuestion}>
-          <h2 className={styles.ques}>{quizData.questions[currentQuestion].question}</h2>
-          <ul>
+          <h2>{quizData.questions[currentQuestion].question}</h2>
+          <div className={styles.questionLi}>
             {quizData.questions[currentQuestion].options.map(
               (option, index) => (
-                <li key={index}>
-                  <label>
+                <div className={styles.li} key={index} style={{
+                  marginBlock: "20px",
+                }}>
+                  <label style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                    paddingBlock: "17px",
+                    border: '1.2px solid #e6e5fa',
+                    paddingInline: '14px',
+                    borderRadius: '10px',
+                    transition: 'all .1s ease-in-out',
+                    backgroundColor: answers[currentQuestion] === option ? '#353275' : 'initial',
+                    color: answers[currentQuestion] === option ? 'white' : 'initial',
+                  }}>
                     <input
                       type="radio"
+                      className={styles.radio}
                       value={option}
                       checked={answers[currentQuestion] === option}
                       onChange={handleAnswerSelect}
                     />
-                    {option}
+                    <div style={{paddingLeft: "20px", display: 'inline'}}>
+                      {option}
+                    </div>
                   </label>
-                </li>
+                </div>
               )
             )}
-          </ul>
-          <button className={styles.prevBtn} onClick={handlePrev} disabled={currentQuestion === 0}>Previous</button>
-          {currentQuestion === quizData.questions.length - 1 ? (
-            <button className={styles.subBtn} onClick={handleQuizSubmit}>Submit</button>
-          ) : (
-            <button className={styles.nextBtn} onClick={handleNext}>Next</button>
-          )}
+          </div>
+          
+          <div style={{
+            display: 'flex',
+            // justifyContent: 'space-between',
+            marginTop: '20px',
+            alignSelf: 'center'
+          }}>
+            <button className={styles.prevBtn} onClick={handlePrev} disabled={currentQuestion === 0}>Previous</button>
+            {currentQuestion === quizData.questions.length - 1 ? (
+              <button className={styles.subBtn} onClick={handleQuizSubmit}>Submit</button>
+            ) : (
+              <button className={styles.nextBtn} onClick={handleNext}>Next</button>
+            )}
+          </div>
+
         </div>
       )}
       <div className={styles.progress_box}>
         <div className={styles.progress_content}>
           <div className={styles.progress_row}>
             {backgroundColors.map((color, index) => (
-              <div key={index} className={styles.progress_num} style={{ backgroundColor: color }}>{index + 1}</div>
+              <div key={index} className={styles.progress_num} style={{ backgroundColor: color, color: color == "#353275" ? "white" : "black", border: color == "#ecf2f6" ? "1.7px solid #e0dfff" : "none" }}>{index + 1}</div>
             ))}
           </div>
           <p style={{color: errorstate}}>Ensure you answer all questions before submitting.</p>
