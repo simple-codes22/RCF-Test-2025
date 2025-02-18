@@ -420,7 +420,7 @@ if (autoSubmitted) {
   //  localStorage.removeItem('savedAnswers'); 
 };
 
-  const backgroundColors = answers.map((answer, index) => answer !== "" ? 'red' : '#1488CC');
+  const backgroundColors = answers.map((answer, index) => answer !== "" ? '#353275' : '#ecf2f6');
 
   return (
     <div>
@@ -479,7 +479,7 @@ if (autoSubmitted) {
         <div className={styles.progress_content}>
           <div className={styles.progress_row}>
             {backgroundColors.map((color, index) => (
-              <div key={index} className={styles.progress_num} style={{ backgroundColor: color }}>{index + 1}</div>
+              <div key={index} className={styles.progress_num} style={{ backgroundColor: color, color: color == "#353275" ? "white" : "black", border: color == "#ecf2f6" ? "1.7px solid #e0dfff" : "none" }}>{index + 1}</div>
             ))}
           </div>
           <p style={{color: errorstate}}>Ensure you answer all questions before submitting.</p>

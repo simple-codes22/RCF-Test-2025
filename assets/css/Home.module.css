@@ -149,12 +149,15 @@
 .examQuestion{
   /* width: 100%; */
 	background-color: #fafafa; /*#E5E5E5*/
-  width: 80%;
+  width: 80%; 
+  /* Figure the issue with width */
 	color: black;
   padding: 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 20px;
+  border: 1.7px solid #e0dfff;
 
 }
 .examQuestion h2{
@@ -185,15 +188,17 @@
   background-color: #017b18;
   color: white;
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .prevBtn{
   height: 40px;
   width: 120px;
   border-radius: 5px;
-  border: none;
-  background-color: #e4f1f8;
+  border: 1.7px solid #e0dfff;
+  background-color: #ecf2f6;
   color: #000;
+  cursor: pointer;
 }
 .subBtn{
   height: 40px;
@@ -203,6 +208,7 @@
   background-color: red;
   color: white; 
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .progress_box{
