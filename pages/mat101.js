@@ -51,26 +51,48 @@ const StartQuiz = ({ name, id }) => {
 			<title>Start Quiz</title>
 		</Head>
 		<div className={styles.header}>
-        <img className={styles.logo} src="rcf_logo_172_X_155.png" alt="RCF_Logo" width="48" height="48"/>
-		<div className={styles.user_info}>
-			<div className={styles.timer}>
-			<CountdownTimer/>
-      {/* <p>status</p> */}
-      {/* <p>{autoSubmitted}</p> */}
-			</div>
-			<img className={styles.ImgCircle} src="avatar.png" alt="img" width="57" height="51"/>
-			<div>
-				<span className={styles.userid}>{id}</span><br/>
-				<span className={styles.user}>{name}</span>
-			</div>
-		</div>
+        <img
+          className={styles.logo}
+          src="rcf_logo_172_X_155.png"
+          alt="RCF_Logo"
+          width="48"
+          height="48"
+        />
+        <div className={styles.user_info}>
+          
+        <div className={styles.timer}>
+            <div style={{
+              fontSize: '13px'
+            }}>Time left</div>
+            <div style={{
+              fontSize: '25px',
+              fontWeight: 'bold'
+            }}>
+              <CountdownTimer />
+            </div>
+          </div>
+          
+
+        </div>
       </div>
-	  <h3 className={styles.instruction}>MAT101: <em className={styles.ctitle}>Elementary Mathematics I</em></h3>
-    <div className={styles.container}>
-		<div className={styles.exambody}>
-			<Quiz quizData={quizData} autoSubmitted= {autoSubmitted} setAutoSubmitted={setAutoSubmitted} name={name} id={id}/>
-		</div>
-	</div>
+
+      <div className={styles.quizContainer}>
+
+
+        <div className={styles.container}>
+          <h3 className={styles.instruction}>
+            MAT101: Elementary Mathematics I
+          </h3>
+          <Quiz
+            quizData={quizData}
+            autoSubmitted={autoSubmitted}
+            setAutoSubmitted={setAutoSubmitted}
+            name={name}
+            id={id}
+          />
+        </div>
+
+      </div>
 	</div>
   );
 };
