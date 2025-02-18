@@ -66,7 +66,7 @@ const StartQuiz = ({ name, id }) => {
               fontSize: '13px'
             }}>Time left</div>
             <div style={{
-              fontSize: '20px',
+              fontSize: '25px',
               fontWeight: 'bold'
             }}>
               <CountdownTimer />
