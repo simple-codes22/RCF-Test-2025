@@ -161,44 +161,46 @@
 
 }
 .examQuestion h2{
-  font-size: 1.5rem;
-  margin-block: 25px;
+  font-size: 1.3rem;
+  margin-block: 15px;
   /* color: black; */
 }
-.li{
-  font-size: 1rem;
-  margin-block: 20px;
-  /* padding: 5px 10px; */
-  /* border: 2px solid black; */
-  /* width: 300px; */
-  /* height: 38px; */
-  /* margin: 5px 0; */
-  /* display: flex; */
-  /* border-radius: 5px; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  background-color: white;
+
+/* input[type=radio] + label:before,
+input[type=checkbox] + label:before{
+  height:12px;
+  width:12px;
+  margin-right: 2px;
+  content: " ";
+  display:inline-block;
+  vertical-align: baseline;
+  border:1px solid #777;
+} */
+
+
+.radio[type=radio i] {
+  accent-color: #fff;
 }
 
 .nextBtn {
-  height: 40px;
-  width: 120px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: none;
-  background-color: #017b18;
+  background-color: #028d1c;
   color: white;
   margin: 0 20px;
+  padding: 15px 25px;
   cursor: pointer;
+  margin-inline: 20px;
 }
 
 .prevBtn{
-  height: 40px;
-  width: 120px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1.7px solid #e0dfff;
   background-color: #ecf2f6;
   color: #000;
+  padding: 15px 25px;
   cursor: pointer;
+  margin-inline: 20px;
 }
 .subBtn{
   height: 40px;

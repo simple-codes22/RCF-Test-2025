@@ -434,7 +434,9 @@ if (autoSubmitted) {
           <div className={styles.questionLi}>
             {quizData.questions[currentQuestion].options.map(
               (option, index) => (
-                <div className="li" key={index} style={{marginBlock: '20px'}}>
+                <div className={styles.li} key={index} style={{
+                  marginBlock: "20px",
+                }}>
                   <label style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -442,10 +444,14 @@ if (autoSubmitted) {
                     paddingBlock: "17px",
                     border: '1.2px solid #e6e5fa',
                     paddingInline: '14px',
-                    borderRadius: '10px'
+                    borderRadius: '10px',
+                    transition: 'all .1s ease-in-out',
+                    backgroundColor: answers[currentQuestion] === option ? '#353275' : 'initial',
+                    color: answers[currentQuestion] === option ? 'white' : 'initial',
                   }}>
                     <input
                       type="radio"
+                      className={styles.radio}
                       value={option}
                       checked={answers[currentQuestion] === option}
                       onChange={handleAnswerSelect}
