@@ -3,7 +3,9 @@ import { useRouter } from "next/router";
 import styles from "../assets/css/styles.module.css";
 import lottieCongrats from './../assets/lottie/completed.json';
 import React, { useEffect, useState } from "react";
+import bg from './../assets/img/Auth.jpg';
 import { Player } from '@lottiefiles/react-lottie-player';
+import rcf from './../assets/img/rcf_logo_172_X_155 tp 2.png';
 import PouchDB from "pouchdb";
 
 const db = new PouchDB("rcf_database");
@@ -93,11 +95,25 @@ const Results = () => {
           <title>CONGRATULATIONS</title>
         </Head>
 
+
+        <div className={styles.congBG} style={{
+          position: "absolute",
+          top: 0,
+          left:0,
+          right:0,
+          bottom: 0,
+          zIndex: -1,
+          background: `url("${bg.src}")`,
+	        backgroundSize: "contain",
+          backgroundRepeat: "repeat",
+
+        }}>
+        </div>
         <div className={styles.congHeader}>
           <img
             className={styles.logo}
-            onClick={() => (window.location.href = "quizphy113")}
-            src="rcf_logo_172_X_155.png"
+            // onClick={() => (window.location.href = "quizphy113")}
+            src={rcf.src}
             alt="RCF_Logo"
             width="70"
             // height="48"

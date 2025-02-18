@@ -6,7 +6,7 @@
 	/* min-height: 100vh; */
 	margin: 0 !important;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Source Sans 3', sans-serif;
 	/* background: #FFFFFF; */
 	/* zoom: 100%; */
 }
@@ -20,8 +20,7 @@
 	margin: 0 !important;
 	padding: 0;
 	font-family: sans-serif;
-	background: url('./../img/Auth.jpg');
-	background-size: contain;
+	background: #0000006c;
 	min-height: 100vh;
 }
 
@@ -271,8 +270,8 @@
 	/* gap: 15px; */
 	padding: 20px 30px;
 	position: absolute;
-	width: 350px;
-	height: 400px;
+	width: 365px;
+	height: 450px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -458,7 +457,7 @@
 	background-color: #fafafa;
 	padding-block: 10px;
 	padding-inline: 6px;
-	border: 1px solid #ececfc;
+	border: 1.7px solid #ececfc;
 	border-radius: 7px;
 }
 .timer > div {
