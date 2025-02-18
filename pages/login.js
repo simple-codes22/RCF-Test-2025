@@ -3,11 +3,13 @@ import styles from "../assets/css/styles.module.css";
 import React, { useState } from "react";
 
 const Candx_login = () => {
-  const [name, setName] = useState("");
-  const [id, setId] = useState("CHM101");
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+	const [name, setName] = useState('');
+	const [id, setId] = useState('CHM101'); // Change priority later
+	
+	const handleSubmit = async (event) => {
+    	event.preventDefault();
+
 
     // Make a POST request to your API route (e.g., '/api/save-user')
     const response = await fetch("/api/save-user", {
