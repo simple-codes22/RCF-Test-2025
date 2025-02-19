@@ -48,7 +48,7 @@ const StartQuiz = ({ name, id }) => {
 	<div className={styles.body} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 		<Head>
 			<link rel="icon" href="rcf_logo_172_X_155.png" />
-			<title>Start Quiz</title>
+			<title>PHY101 TEST</title>
 		</Head>
 		<div className={styles.header}>
         <img className={styles.logo} src="rcf_logo_172_X_155.png" alt="RCF_Logo" width="48" height="48"/>
@@ -60,13 +60,13 @@ const StartQuiz = ({ name, id }) => {
 			</div>
 			<img className={styles.ImgCircle} src="avatar.png" alt="img" width="57" height="51"/>
 			<div>
-				<span className={styles.userid}>{id}</span><br/>
+				{/* <span className={styles.userid}>{id}</span><br/> */}
 				<span className={styles.user}>{name}</span>
 			</div>
 		</div>
       </div>
-	  <h3 className={styles.instruction}>PHY101: <em className={styles.ctitle}>General Physics I</em></h3>
     <div className={styles.container}>
+	    <h3 className={styles.instruction}>PHY101: General Physics I</h3>
 		<div className={styles.exambody}>
 			<Quiz quizData={quizData} autoSubmitted= {autoSubmitted} setAutoSubmitted={setAutoSubmitted} name={name} id={id}/>
 		</div>

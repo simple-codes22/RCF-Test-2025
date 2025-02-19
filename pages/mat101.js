@@ -60,13 +60,12 @@ const StartQuiz = ({ name, id }) => {
 			</div>
 			<img className={styles.ImgCircle} src="avatar.png" alt="img" width="57" height="51"/>
 			<div>
-				<span className={styles.userid}>{id}</span><br/>
 				<span className={styles.user}>{name}</span>
 			</div>
 		</div>
       </div>
-	  <h3 className={styles.instruction}>MAT101: <em className={styles.ctitle}>Elementary Mathematics I</em></h3>
     <div className={styles.container}>
+	  <h3 className={styles.instruction}>MAT101: Elementary Mathematics I</h3>
 		<div className={styles.exambody}>
 			<Quiz quizData={quizData} autoSubmitted= {autoSubmitted} setAutoSubmitted={setAutoSubmitted} name={name} id={id}/>
 		</div>
