@@ -45,7 +45,7 @@ const StartQuiz = ({ name, id }) => {
   
   
   return (
-	<div className={styles.body}>
+	<div className={styles.body} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 		<Head>
 			<link rel="icon" href="rcf_logo_172_X_155.png" />
 			<title>Start Quiz</title>
