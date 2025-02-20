@@ -10,7 +10,7 @@ const StartQuiz = ({ name, id }) => {
   const [autoSubmitted, setAutoSubmitted] = useState(false);
 
   const CountdownTimer = () => {
-    const [countdown, setCountdown] = useState(900); // 900 seconds = 15 minutes
+    const [countdown, setCountdown] = useState(1200); // 900 seconds = 15 minutes
     useEffect(() => {
       const timer = setInterval(() => {
         setCountdown((prevCountdown) => prevCountdown - 1);
@@ -63,21 +63,18 @@ const StartQuiz = ({ name, id }) => {
           
           <div className={styles.timer}>
             <div style={{
-              fontSize: '13px'
-            }}>Time left</div>
-            <div style={{
-              fontSize: '25px',
+              fontSize: '24px',
               fontWeight: 'bold'
             }}>
               <CountdownTimer />
             </div>
           </div>
           
-          {/* <img className={styles.ImgCircle} src="avatar.png" alt="img" width="57" height="51"/> */}
+          <img className={styles.ImgCircle} src="avatar.png" alt="img" width="57" height="51"/>
 
           <div>
             {/* <span className={styles.userid}>{id}</span><br/> */}
-            {/* <span className={styles.user}>{name}</span> */}
+            <span className={styles.user}>{name}</span>
             {/* Show names later */}
           </div>
         </div>
@@ -90,6 +87,8 @@ const StartQuiz = ({ name, id }) => {
           <h3 className={styles.instruction}>
             CHM101: General Chemistry I
           </h3>
+          <div className={styles.exambody}>
+
           <Quiz
             quizData={quizData}
             autoSubmitted={autoSubmitted}
@@ -97,6 +96,7 @@ const StartQuiz = ({ name, id }) => {
             name={name}
             id={id}
           />
+          </div>
         </div>
 
       </div>

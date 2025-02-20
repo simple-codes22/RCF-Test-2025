@@ -86,6 +86,7 @@ const Candx_login = () => {
                 <input
                   type="text"
                   name="user_id"
+                  required
                   id="user_id"
                   placeholder="Full Name (Surname Firstname Other-optional)"
                   value={name}
