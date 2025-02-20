@@ -68,6 +68,7 @@ const Candx_login = () => {
               lineHeight: "22px",
               padding: "none",
               textAlign: "center",
+              paddingBottom: '20px'
             }}
           >
             {" "}
@@ -81,7 +82,7 @@ const Candx_login = () => {
                 autoComplete="off"
                 onSubmit={handleSubmit}
               >
-                <label style={{ fontSize: "16px" }}>Full Name</label>
+                <label style={{ fontSize: "16px", marginTop: '10px' }}>Full Name</label>
                 <input
                   type="text"
                   name="user_id"

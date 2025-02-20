@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import { GetServerSideProps } from 'next';
-import { parse } from 'cookie';
-import styles from '../assets/css/styles.module.css';
+import Head from "next/head";
+import { GetServerSideProps } from "next";
+import { parse } from "cookie";
+import styles from "../assets/css/styles.module.css";
 import Quiz from "../components/examDisp";
 import { quizData } from "../constants/phy101";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const StartQuiz = ({ name, id }) => {
   const [autoSubmitted, setAutoSubmitted] = useState(false);
@@ -15,35 +15,34 @@ const StartQuiz = ({ name, id }) => {
       const timer = setInterval(() => {
         setCountdown((prevCountdown) => prevCountdown - 1);
       }, 1000);
-  
+
       return () => {
         clearInterval(timer);
       };
     }, []);
-  
+
     useEffect(() => {
       if (countdown === 0) {
-        console.log('Countdown finished!');
+        console.log("Countdown finished!");
         setAutoSubmitted(true);
       }
     }, [countdown]);
-  
+
     useEffect(() => {
-      console.log('autoSubmitted:', autoSubmitted);
+      console.log("autoSubmitted:", autoSubmitted);
     }, [autoSubmitted]);
-  
+
     const minutes = Math.floor(countdown / 60);
     const seconds = countdown % 60;
-  
+
     return (
       <div>
-        {minutes < 10 ? '0' + minutes : minutes}:
-        {seconds < 10 ? '0' + seconds : seconds}
+        {minutes < 10 ? "0" + minutes : minutes}:
+        {seconds < 10 ? "0" + seconds : seconds}
       </div>
     );
   };
-  
-  
+
   return (
 	<div className={styles.body} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 		<Head>
@@ -78,11 +77,11 @@ const StartQuiz = ({ name, id }) => {
 export const getServerSideProps = async (context) => {
   console.log("fetching cookies");
   // Read cookies from the request headers
-  const cookies = parse(context.req.headers.cookie || '');
+  const cookies = parse(context.req.headers.cookie || "");
 
   // Access individual cookie values
-  const name = cookies.name || '';
-  const id = cookies.id || '';
+  const name = cookies.name || "";
+  const id = cookies.id || "";
 
   console.log("name:", name);
   console.log("id:", id);
@@ -91,12 +90,12 @@ export const getServerSideProps = async (context) => {
     // Cookie is not present
     if (context.res) {
       // If running on the server-side, redirect to index page
-      context.res.setHeader('Location', '/login');
+      context.res.setHeader("Location", "/login");
       context.res.statusCode = 302;
       context.res.end();
     } else {
       // If running on the client-side, redirect to index page
-      window.location.href = '/';
+      window.location.href = "/";
     }
   }
 

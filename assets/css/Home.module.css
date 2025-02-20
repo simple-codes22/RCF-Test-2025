@@ -112,7 +112,7 @@
   padding-right: 15px;
 }
 .courseTitle{
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .courseTitle h3{
   color: black;
@@ -161,13 +161,13 @@
   justify-content: center;
   border-radius: 20px;
   border: 1.7px solid #e0dfff;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 .examQuestion h2{
   font-size: 1.3rem;
   margin-block: 15px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   /* color: black; */
 }
 
@@ -197,7 +197,7 @@ input[type=checkbox] + label:before{
   cursor: pointer;
   margin-inline: 20px;
   font-size: 17px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .prevBtn{
@@ -209,7 +209,7 @@ input[type=checkbox] + label:before{
   cursor: pointer;
   margin-inline: 20px;
   font-size: 16px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .subBtn{
   border-radius: 5px;
@@ -220,7 +220,7 @@ input[type=checkbox] + label:before{
   padding: 15px 25px;
   cursor: pointer;
   font-size: 16px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .progress_box{
@@ -269,7 +269,7 @@ input[type=checkbox] + label:before{
 	gap: 12px;
 	/* width: 80vw; */
 	height: 32px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .progress_num{
