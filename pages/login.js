@@ -39,6 +39,74 @@ const Candx_login = () => {
       </Head>
       <div className={styles.login_bg}>
         <div className={styles.login_frame}>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%'}}>
+            <div>
+              <img src="rcf_logo_172_X_155.png" className={styles.login_logo} />
+            </div>
+
+            <div>
+              <h1 className={styles.login_title}>Login to RCF eTest Trials</h1>
+            </div>
+            <div style={{
+              fontSize: '13px',
+              marginBottom: '45px',
+              marginTop: "10px"
+            }}>
+              Fill in the details appropriately to get started with your quiz
+            </div>
+          </div>
+
+          <div style={{
+            display: 'flex',
+            justifyContent: "center",
+            width: '100%'
+          }}>
+          <form
+                method=""
+                action=""
+                autoComplete="off"
+                onSubmit={handleSubmit}
+                style={{width: "100%", position: 'relative'}}
+              >
+                <label style={{ fontSize: "14px", marginTop: '10px', fontWeight: '500' }}>Full Name</label>
+                <input
+                  type="text"
+                  name="user_id"
+                  required
+                  id="user_id"
+                  placeholder="Surname Firstname Other-name(optional)"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className={styles.input}
+                />
+                <br />
+                <label style={{ fontSize: "14px", marginTop: '10px', fontWeight: '500' }}>Course Code</label>
+                {/* <input type="text" name="id" id="id" placeholder="Course Code" value={id} onChange={(e) => setId(e.target.value)}
+							className={styles.input}/> */}
+
+                <select
+                  name="id"
+                  defaultValue="CHM101"
+                  className={styles.select}
+                  onChange={(e) => setId(e.target.value)}
+                >
+                  <option className={styles.option} value="CHM101">
+                    CHM 101
+                  </option>
+                  <option className={styles.option} value="PHY101">
+                    PHY 101
+                  </option>
+                  <option className={styles.option} value="MAT101">
+                    MAT 101
+                  </option>
+                </select>
+                <button className={styles.loginbtn} >Login</button>
+              </form>
+          </div>
+
+
+        </div>
+        {/* <div className={styles.login_frame}>
           <div className={styles.login_logo}>
             <img
               className={styles.login_logo}
@@ -73,8 +141,8 @@ const Candx_login = () => {
           >
             {" "}
             Fill in details appropriately to begin your quiz
-          </div>
-          <div className={styles.frame8}>
+          </div> */}
+          {/* <div className={styles.frame8}>
             <div className={styles.frame4}>
               <form
                 method=""
@@ -94,11 +162,11 @@ const Candx_login = () => {
                   className={styles.input}
                 />
                 <br />
-                <label>Course Code</label>
+                <label>Course Code</label> */}
                 {/* <input type="text" name="id" id="id" placeholder="Course Code" value={id} onChange={(e) => setId(e.target.value)}
 							className={styles.input}/> */}
 
-                <select
+                {/* <select
                   name="id"
                   defaultValue="CHM101"
                   className={styles.select}
@@ -117,10 +185,10 @@ const Candx_login = () => {
                 <button className={styles.loginbtn} >LOGIN</button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
         <footer className={styles.footer}>&copy; RCF dev Team (2025)</footer>
-      </div>
+      {/* </div> */}
     </div>
   );
 };
