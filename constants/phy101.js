@@ -3,106 +3,250 @@ export const quizData = {
   description: 'Test your knowledge with these general knowledge questions!',
   questions: [
     {
-      question: '1. Which of the following is not a fundamental S.I unit',
-      options: ['meter', 'kelvin', 'ampere', 'radians'],
-      answer: 'radians'
+        question: '1. Which of the following is NOT a fundamental S.I unit?',
+        options: ['Metre', 'Ampere', 'Kelvin'],
+        answer: 'Ampere'
     },
     {
-      question: '2. Which of the following are the correct S.I unit of the quantities indicated i. N(Force) ii. N/m (Torque) iii. Watt(power) iv. Kg/ms⁻²(momentum)',
-      options: ['i and ii only', 'i, ii, and iii only', 'i, iii, and iv only', 'i and iii only'],
-      answer: 'i and iii only'
+        question: '2. What is the dimension of energy?',
+        options: ['ML²T`²', 'ML²T²', 'ML²T`³'],
+        answer: 'ML²T`²'
     },
     {
-      question: '3. For which of the under listed quantities is the derived unit ML²T⁻² correct i. Moment of force ii. Work iii. Acceleration.',
-      options: ['i only', 'ii only', 'i and ii only', 'ii and iii only'],
-      answer: 'i and ii only'
+        question: '3. Which of the following indicates how fast a body moves?',
+        options: ['Mass', 'Length', 'Time'],
+        answer: 'Time'
     },
     {
-      question: '4. An object moves 4m eastward (E) and then 3m southwards (S). Its displacement from the original position is',
-      options: ['1m SE', '5m SE', '7m SE', '12m SE'],
-      answer: '5m SE'
+        question: '4. Which of the following is NOT a possible unit for velocity?',
+        options: ['centimeters/month', 'millimeters/kilowatt', 'decimeters/kilo second'],
+        answer: 'millimeters/kilowatt'
     },
     {
-      question: '5. The distance xm travelled by a particle in time t seconds is described by the equation x = 10 + 2t². Find the average speed of the particle between the time interval t = 2 seconds and t = 5 seconds',
-      options: ['60m/s', '72m/s', '108m/s', '84m/s'],
-      answer: '84m/s'
+        question: '5. Which of the following is a dimension of pressure?',
+        options: ['ML`¹T`²', 'MLT`²', 'ML²T`²'],
+        answer: 'ML`¹T`²'
     },
     {
-      question: '6. A vector A = 3units at an angle 60° with vector B = 3units that acts along the positive y-axis of the xy plane. What is the resultant vector along the positive y-axis',
-      options: ['5.5units', '2.5units', '3.5units', '4.5units'],
-      answer: '3.5units'
+        question: '6. 1 Mega Pascal is equivalent to?',
+        options: ['1N/m²', '1N/mm²', '1Nmm²'],
+        answer: '1N/mm²'
     },
     {
-      question: '7. Which of these quantities are vectors i. Moment ii. Temperature gradient iii. Density iv. Temperature?',
-      options: ['i and iii only', 'i and iv only', 'i and ii only', 'ii and iii only'],
-      answer: 'i and ii only'
+        question: '7. Experiment shows that the frictional drag force F of a car moving in the air depends on the velocity v of its motion, density p of the air through which it travels, and the cross-sectional area of the car. If the force F = kP^xV^2yA^z, where x, y, and z are integers and k is a dimensionless constant. Find the values of x, y, and z.',
+        options: ['1, 1, 1', '½, ½, ½', '1, -1, 1'],
+        answer: '1, 1, 1'
     },
     {
-      question: '8. The equilibrant of two or more concurrent forces is equal',
-      options: ['To the difference in magnitude of the force', 'In magnitude with the resultant but opposite in direction', 'To the sum of the magnitude of the force', 'In magnitude and direction to the resultant'],
-      answer: 'In magnitude with the resultant but opposite in direction'
+        question: '8. Which of the following is a set of vectors?',
+        options: ['velocity, volume, upthrust', 'mass, force, impulse', 'weight, displacement, moment'],
+        answer: 'weight, displacement, moment'
     },
     {
-      question: '9. During same interval, it is observed that a train travels the same distance as does a lorry. The two vehicles therefore have the same',
-      options: ['Uniform acceleration', 'Instantaneous velocity', 'Initial velocity', 'Average speed'],
-      answer: 'Average speed'
+        question: '9. Convert speed of 108 km/hr to units in m/s',
+        options: ['50m/s', '45m/s', '30m/s'],
+        answer: '30m/s'
     },
     {
-      question: '10. Which of the following is true of a body which is moving in a straight line with uniform acceleration? The velocity of the body',
-      options: ['Must always be zero when the body stop accelerating', 'Is also uniform', 'Will increase with time in the direction of the acceleration', 'Is equal to the quotient of distance travelled and time.'],
-      answer: 'Will increase with time in the direction of the acceleration'
+        question: '10. Convert speed of 0.2 cm/s to units in km/yr',
+        options: ['4.2km/yr', '63km/yr', '36km/yr'],
+        answer: '63km/yr'
     },
     {
-      question: '11. A body starts from rest and moves in a straight path with uniform acceleration of 8m/s² for 5 seconds. It then decelerates uniformly to rest in the next 10 seconds. Calculate the magnitude of its acceleration.',
-      options: ['80m/s²', '16m/s²', '8m/s²', '4m/s²'],
-      answer: '4m/s²'
+        question: '11. Which of the following has the same dimension of stress?',
+        options: ['pressure', 'flow rate', 'momentum'],
+        answer: 'pressure'
     },
     {
-      question: '12. A body falls from rest to the ground in 0.5 seconds. Calculate the height from which it falls (g = 10m/s²)',
-      options: ['1.0m', '0.125m', '0.5m', '1.25m'],
-      answer: '1.25m'
+        question: '12. The derived dimension ML²T`² is the dimension of?',
+        options: ['Torque', 'Energy', 'a&b'],
+        answer: 'a&b'
     },
     {
-      question: '13. Two particles X and Y starting from rest cover the same distance. The acceleration of X is twice that of Y. The ratio of the time taken by X to that taken by Y is',
-      options: ['½', '2', '1/√2', '√2'],
-      answer: '1/√2'
+        question: '13. Which of the following quantities has the same unit as kilowatt-hour?',
+        options: ['force × acceleration', 'force × velocity', 'force × distance'],
+        answer: 'force × distance'
     },
     {
-      question: '14. Newton`s first law of motion states that a body continues in its state of rest or uniform motion in a straight line unless',
-      options: ['There is no change in the direction of motion of the body', 'The force of gravity changes', 'There is action and reaction', 'Forces are impressed on the body'],
-      answer: 'Forces are impressed on the body'
+        question: '14. Which of the following is the dimension of dynamic viscosity?',
+        options: ['ML`¹T`²', 'ML`¹T`¹', 'L²T`¹'],
+        answer: 'ML`¹T`¹'
     },
     {
-      question: '15. The property of a body to remain at rest, or to continue to move in a straight line is known as',
-      options: ['Inertia', 'force ', 'impulse ', 'momentum'],
-      answer: 'Inertia'
-      },
-      {
-        question: '16. A ball of mass 5.0kg lifts a smooth vertical wall normally with a speed of 2m/s and rebounds with the same speed. Determine the impulse experienced by the ball',
-        options: ['20 kgms⁻¹', '10 kgms⁻¹', '1.5 kgms⁻¹', '1.3 kgms⁻¹'],
-        answer: '20 kgms⁻¹'
-      }, 
-      { 
-      question: '17. The impact of two colliding object is said to be perfectly elastic if ',
-      options: ['The total kinetic energy of the objects after collision is equal to that before the collision', 'The object coalesce and move together with a common speed after collision', 'After collision, the kinetic energy of the objects is equal to that of the other object', 'it obeys the law of conservation of momentum.'],
-      answer: 'The total kinetic energy of the objects after collision is equal to that before the collision'
-      },
-      { 
-      question: '18. A machine gun with a mass of 5kg fires a 50g bullet of a speed of 100m/s.The recoil speed of the machine gun is  ',
-      options: ['0.5m/s', '1.5m/s', '1m/s', '2m/s'],
-      answer: '1m/s'
-      },
-      { 
-      question: '19. A particle is projected vertically upwards with a velocity of 20m/s.What Maximum height does it attain (g=10m/s²)',
-      options: ['2000m', '200m', '20m', '2m'],
-      answer: '20m'
-      },
-      { 
-      question: '20. A ball is thrown vertically upwards from the ground with an initial velocity of 50m/s. what is the total time spent by the ball in the air? (g=10m/s²) ',
-      options: ['2.5s', '5.0s', '10.0s', ' 15.0s'],
-      answer: '10.0s'
-      }
-      ,
+        question: '15. The watt is equivalent to?',
+        options: ['Nms`¹', 'Js', 'Ns'],
+        answer: 'Nms`¹'
+    },
+    {
+        question: '16. According to Isaac Newton, space is?',
+        options: ['Non empirical', 'Euclidean', 'Absolute'],
+        answer: 'Absolute'
+    },
+    {
+        question: '17. According to Immanuel Kant, space is?',
+        options: ['Non empirical', 'Euclidean', 'Absolute'],
+        answer: 'Non empirical'
+    },
+    {
+        question: '18. Which of the following is an example of non-inertia reference frame?',
+        options: ['stationary magnet', 'carousel', 'sun'],
+        answer: 'carousel'
+    },
+    {
+        question: '19. When is inertia reference of frame not possible?',
+        options: ['No net force acting on the frame', 'Net force acting on the frame', 'none of the above'],
+        answer: 'Net force acting on the frame'
+    },
+    {
+        question: '20. ________ in physics is used in measuring the passage of event and occurrence?',
+        options: ['Time', 'Space', 'Frequency'],
+        answer: 'Time'
+    }
+]
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // questions: [
+  //   {
+  //     question: '1. Which of the following is not a fundamental S.I unit',
+  //     options: ['meter', 'kelvin', 'ampere', 'radians'],
+  //     answer: 'radians'
+  //   },
+  //   {
+  //     question: '2. Which of the following are the correct S.I unit of the quantities indicated i. N(Force) ii. N/m (Torque) iii. Watt(power) iv. Kg/ms⁻²(momentum)',
+  //     options: ['i and ii only', 'i, ii, and iii only', 'i, iii, and iv only', 'i and iii only'],
+  //     answer: 'i and iii only'
+  //   },
+  //   {
+  //     question: '3. For which of the under listed quantities is the derived unit ML²T⁻² correct i. Moment of force ii. Work iii. Acceleration.',
+  //     options: ['i only', 'ii only', 'i and ii only', 'ii and iii only'],
+  //     answer: 'i and ii only'
+  //   },
+  //   {
+  //     question: '4. An object moves 4m eastward (E) and then 3m southwards (S). Its displacement from the original position is',
+  //     options: ['1m SE', '5m SE', '7m SE', '12m SE'],
+  //     answer: '5m SE'
+  //   },
+  //   {
+  //     question: '5. The distance xm travelled by a particle in time t seconds is described by the equation x = 10 + 2t². Find the average speed of the particle between the time interval t = 2 seconds and t = 5 seconds',
+  //     options: ['60m/s', '72m/s', '108m/s', '84m/s'],
+  //     answer: '84m/s'
+  //   },
+  //   {
+  //     question: '6. A vector A = 3units at an angle 60° with vector B = 3units that acts along the positive y-axis of the xy plane. What is the resultant vector along the positive y-axis',
+  //     options: ['5.5units', '2.5units', '3.5units', '4.5units'],
+  //     answer: '3.5units'
+  //   },
+  //   {
+  //     question: '7. Which of these quantities are vectors i. Moment ii. Temperature gradient iii. Density iv. Temperature?',
+  //     options: ['i and iii only', 'i and iv only', 'i and ii only', 'ii and iii only'],
+  //     answer: 'i and ii only'
+  //   },
+  //   {
+  //     question: '8. The equilibrant of two or more concurrent forces is equal',
+  //     options: ['To the difference in magnitude of the force', 'In magnitude with the resultant but opposite in direction', 'To the sum of the magnitude of the force', 'In magnitude and direction to the resultant'],
+  //     answer: 'In magnitude with the resultant but opposite in direction'
+  //   },
+  //   {
+  //     question: '9. During same interval, it is observed that a train travels the same distance as does a lorry. The two vehicles therefore have the same',
+  //     options: ['Uniform acceleration', 'Instantaneous velocity', 'Initial velocity', 'Average speed'],
+  //     answer: 'Average speed'
+  //   },
+  //   {
+  //     question: '10. Which of the following is true of a body which is moving in a straight line with uniform acceleration? The velocity of the body',
+  //     options: ['Must always be zero when the body stop accelerating', 'Is also uniform', 'Will increase with time in the direction of the acceleration', 'Is equal to the quotient of distance travelled and time.'],
+  //     answer: 'Will increase with time in the direction of the acceleration'
+  //   },
+  //   {
+  //     question: '11. A body starts from rest and moves in a straight path with uniform acceleration of 8m/s² for 5 seconds. It then decelerates uniformly to rest in the next 10 seconds. Calculate the magnitude of its acceleration.',
+  //     options: ['80m/s²', '16m/s²', '8m/s²', '4m/s²'],
+  //     answer: '4m/s²'
+  //   },
+  //   {
+  //     question: '12. A body falls from rest to the ground in 0.5 seconds. Calculate the height from which it falls (g = 10m/s²)',
+  //     options: ['1.0m', '0.125m', '0.5m', '1.25m'],
+  //     answer: '1.25m'
+  //   },
+  //   {
+  //     question: '13. Two particles X and Y starting from rest cover the same distance. The acceleration of X is twice that of Y. The ratio of the time taken by X to that taken by Y is',
+  //     options: ['½', '2', '1/√2', '√2'],
+  //     answer: '1/√2'
+  //   },
+  //   {
+  //     question: '14. Newton`s first law of motion states that a body continues in its state of rest or uniform motion in a straight line unless',
+  //     options: ['There is no change in the direction of motion of the body', 'The force of gravity changes', 'There is action and reaction', 'Forces are impressed on the body'],
+  //     answer: 'Forces are impressed on the body'
+  //   },
+  //   {
+  //     question: '15. The property of a body to remain at rest, or to continue to move in a straight line is known as',
+  //     options: ['Inertia', 'force ', 'impulse ', 'momentum'],
+  //     answer: 'Inertia'
+  //     },
+  //     {
+  //       question: '16. A ball of mass 5.0kg lifts a smooth vertical wall normally with a speed of 2m/s and rebounds with the same speed. Determine the impulse experienced by the ball',
+  //       options: ['20 kgms⁻¹', '10 kgms⁻¹', '1.5 kgms⁻¹', '1.3 kgms⁻¹'],
+  //       answer: '20 kgms⁻¹'
+  //     }, 
+  //     { 
+  //     question: '17. The impact of two colliding object is said to be perfectly elastic if ',
+  //     options: ['The total kinetic energy of the objects after collision is equal to that before the collision', 'The object coalesce and move together with a common speed after collision', 'After collision, the kinetic energy of the objects is equal to that of the other object', 'it obeys the law of conservation of momentum.'],
+  //     answer: 'The total kinetic energy of the objects after collision is equal to that before the collision'
+  //     },
+  //     { 
+  //     question: '18. A machine gun with a mass of 5kg fires a 50g bullet of a speed of 100m/s.The recoil speed of the machine gun is  ',
+  //     options: ['0.5m/s', '1.5m/s', '1m/s', '2m/s'],
+  //     answer: '1m/s'
+  //     },
+  //     { 
+  //     question: '19. A particle is projected vertically upwards with a velocity of 20m/s.What Maximum height does it attain (g=10m/s²)',
+  //     options: ['2000m', '200m', '20m', '2m'],
+  //     answer: '20m'
+  //     },
+  //     { 
+  //     question: '20. A ball is thrown vertically upwards from the ground with an initial velocity of 50m/s. what is the total time spent by the ball in the air? (g=10m/s²) ',
+  //     options: ['2.5s', '5.0s', '10.0s', ' 15.0s'],
+  //     answer: '10.0s'
+  //     }
+  //     ,
       // { 
       // question: ' Which of the following statement about elastic collision is correct. ',
       // options: ['Momentum is lost due to the sound produced ', ' Loss in momentum is equal to loss in kinetic energy ', 'Both kinetic energy and momentum are conserved ', 'Kinetic energy is lost while momentum is conserved '],
@@ -203,10 +347,5 @@ export const quizData = {
       // options: [' 20m', '16m ', '64m ', '12m '],
       // answer: '20m'
       // },
-      ]
-      
-      
-      
-      
-  };
+      // ]
   
