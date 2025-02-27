@@ -430,7 +430,7 @@ if (autoSubmitted) {
         </div>
       ) : (
         <div className={styles.examQuestion}>
-          <h2>{quizData.questions[currentQuestion].question}</h2>
+          <h2 dangerouslySetInnerHTML={{ __html: quizData.questions[currentQuestion].question.replace(/\n/g, '<br>') }} />
           <div className={styles.questionLi}>
             {quizData.questions[currentQuestion].options.map(
               (option, index) => (
