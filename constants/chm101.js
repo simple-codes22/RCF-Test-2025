@@ -25,82 +25,82 @@ export const quizData = {
     {
       question: '5. Ewin Schrodinger used the _____ principle to come up with the atomic model that we still use today',
       options: ['Hinds principle', 'Pauli principle', "Rutherford's principle", "Heisenberg uncertainty principle"],
-      answer: ''
+      answer: 'Heisenberg uncertainty principle'
     },
     {
       question: '6. _____ is the process they leads to the transformation of one set of chemical substance to another',
       options: ['Chemical reaction', 'Chemical equilibrium', 'Chemical equation', 'Chemical Intermediate'],
-      answer: ''
+      answer: 'Chemical reaction'
     },
     {
       question: '7. In chemical reaction only the position of the _____ is involved in the formation and breaking of chemical bonds between atoms.',
       options: ["Proton", "Electron", "Neutron", "Nucleus"],
-      answer: '',
+      answer: 'Electron',
     },
     {
       question: '8. _____ are used to describe chemical reaction.',
       options: ['Chemical symbols', 'Chemical equation', 'Chemical intermediate', 'Reacting species'],
-      answer: ''
+      answer: 'Chemical equation'
     },
     {
       question: '9. The beginning ingredients of a chemical reaction are referred to as _____',
       options: ['Reactant', "Product", "Water", "Indicator"],
-      answer: ''
+      answer: 'Reactant'
     },
     {
       question: '10. Coefficients are added in front of the chemical formulas to show the number of _____ of the material consumed or created. ',
       options: ['Molecules', "Atoms", "Radicals", "Electrons"],
-      answer: ''
+      answer: 'Molecules'
     },
     {
       question: "Consider the reaction.\n\n<div style='font-size: 18px'>AH<sub>2</sub> + BO<sub>2</sub> → CH<sub>2</sub>O</div>\n11. What is A in the above equation?",
       options: ['1', '2', '0', '4'],
-      answer: ''
+      answer: '2'
     },
     {
       question: "Consider the reaction.\n\n<div style='font-size: 18px'>AH<sub>2</sub> + BO<sub>2</sub> → CH<sub>2</sub>O</div>\n12. What is B in the above equation?",
       options: ['1', '2', '0', '4'],
-      answer: ''
+      answer: '1'
     },
     {
       question: "Consider the reaction.\n\n<div style='font-size: 18px'>AH<sub>2</sub> + BO<sub>2</sub> → CH<sub>2</sub>O</div>\n13. What is C in the above equation?",
       options: ['1', '2', '0', '4'],
-      answer: ''
+      answer: '2'
     },
     {
       question: '14. ↔ represent ____ in a chemical equation',
       options: ['Equilibrium', 'Resonance', 'Forward reaction', 'Half forward reaction'],
-      answer: ''
+      answer: 'Resonance'
     },
     {
       question: '15. = represent ____ in a chemical equation.',
       options: ['Equal to', 'Equilibrium', 'Ratio', 'Stoichiometry'],
-      answer: ''
+      answer: 'Stoichiometry'
     },
     {
       question: '16. ____ is the study of the measurements of units of matter( atom, ion, molecules e.t.c) in chemical formulas and reaction.',
       options: ['Stoichiometry', 'Chemical reaction', 'Chemical equation', 'None of the above'],
-      answer: ''
+      answer: 'Stoichiometry'
     },
     {
       question: "17. Consider the reaction:\n\n<div style='font-size: 18px'>2NaOH + Cl<sub>2</sub> → NaOCl + NaCl +H<sub>2</sub>O</div>\n The household bleach, aqueous sodium hypochlorite (NaOCl) can be prepared by the reaction of sodium hydroxide with Chlorine. How many grams of NaOH are needed to react with 25.0g of Cl<sub>2</sub>",
       options: ['28.00g', '28.10g', '28.16g', '29.00g'],
-      answer: ''
+      answer: '28.16g'
     },
     {
       question: '18. Who was able to answer why electrons did not collapse into the nucleus?',
       options: ['William Thomson', 'Niels Bohr', 'Ewin Schrodinger', 'Rutherford'],
-      answer: ''
+      answer: 'Niels Bohr'
     },
     {
       question: '19. Whose atomic model is known as the Plum pudding model?',
       options: ['William Thomson', "Ernest Rutherford", "Ewin Schrodinger", "Democritus"],
-      answer: ''
+      answer: 'William Thomson'
     },
     {
       question: '20. Which bond is formed btw a metalloid and a non-metal?',
       options: ['Ionic bonds', 'Covanlent bonds', "Van der Waals forces"],
-      answer: ''
+      answer: 'Covanlent bonds'
     },
     // {
     //   question: '',
