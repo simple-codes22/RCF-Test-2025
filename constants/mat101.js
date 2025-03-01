@@ -4,8 +4,8 @@ export const quizData = {
   questions: [
     {
       question: "1. Suppose M= {x:x is positive integers less than 10} and N= {x:x is prime numbers}, what is M ∩ N?",
-      options: ["{2}", "{2,4}", "{ }", "{6}"],
-      answer: "{2}"
+      options: ["{2}", "{2,4}", "{2,3,5,7}", "{6}"],
+      answer: "{2,3,5,7}"
     },
     {
       question: "2. Let A ={2,3,5,7}, B={3,5,7,9} and C={5,7,9,11}, What is (A ∪ B) ∩ (B ∪ C)?",
@@ -14,8 +14,8 @@ export const quizData = {
     },
     {
       question: "3. Suppose Ų ={x:1≤x≤10} and X={2,4,6,8}, Y={3,6,9}; find (X ∩ Y)'.",
-      options: ["{6}", "{ø}", "{1,2,3,4,5,6,7,8,9,10}", "{3,9}"],
-      answer: "{1,2,3,4,5,6,7,8,9,10}"
+      options: ["{6}", "{ø}", "{1,2,3,4,5,6,7,8,9,10}", "{1,2,3,4,5,7,8,9,10}"],
+      answer: "{1,2,3,4,5,7,8,9,10}"
     },
     {
       question: "4. Which of these is equivalent to (X ∩ X')?",
