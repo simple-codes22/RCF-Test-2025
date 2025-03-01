@@ -99,9 +99,114 @@ export const quizData = {
     },
     {
       question: '20. Which bond is formed btw a metalloid and a non-metal?',
-      options: ['Ionic bonds', 'Covanlent bonds', "Van der Waals forces"],
+      options: ['Ionic bonds', 'Covanlent bonds', "Van der Waals forces", "Metallic bond"],
       answer: 'Covanlent bonds'
     },
+    // {
+    //   question: '21. The interaction between non-polar molecules is known as dipole dipole interaction.',
+    //   options: ['True', 'False', "Maybe", "All of the above"],
+    //   answer: ''
+    // },
+    // {
+    //   question: '22. Hydrogen bond are formed when hydrogen combine with highly _______ ',
+    //   options: ['Electropositive element', 'Electronegative element', 'Neutral species', 'None of the above'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '23. Which bond is formed in this compound CO2.',
+    //   options: ['Ionic bond', 'Covalent bond', "Van der Waals forces", 'Hydrogen bond'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '24. The bond formed in this compound H2O is called.',
+    //   options: ['Covalent bond', 'Hydrogen bond', 'Ionic bond', 'Van der Waals forces'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '25. The single bond formed by the direct, head-on overlaps of orbitals is a _____ bond',
+    //   options: ['Sigma bond', 'Pie bond', 'Connective bond', 'Radical bond'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '26. sp<sup>3</sup> has _______ electronic arrangement',
+    //   options: ['Linear', 'Trigonal planer', 'Square planer', 'Tetrahedral'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '27. sp<sup>2</sup> has _______ electronic arrangement',
+    //   options: ['Linear', 'Trigonal planer', 'Square planer', 'Tetrahedral'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '28. sp has _______ electronic arrangement',
+    //   options: ['Linear', 'Trigonal planer', 'Square planer', 'Tetrahedral'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '29. The combination of one S and one P results in the formation of sp orbitals. These two hybrid orbitals are ____ apart.',
+    //   options: ['90 &deg;', '120 &deg;', '180 &deg;', '270 &deg;'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '30. sp<sup>2</sup> orbitals are ______ apart.',
+    //   options: ['90 &deg;', '120 &deg;', '180 &deg;', '270 &deg;'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '31. Who demonstrates that crystals were of the appropriate size to diffract X-ray',
+    //   options: ['Max von laue', 'Maxwell laue', 'Mex von laue', 'Mex von laue', 'Mexwell laue'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '32. What is the bond formed between a metal and a non- metal',
+    //   options: ['Ionic bond', 'Covalent bond', 'Van der Waals forces', 'Metallic bond'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '33. All but one of the following are crystal classifications.',
+    //   options: ['Ionic crystal', 'Carbonic crystals', 'Metallic crystals', 'Atomic Molecular crystals'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '34. The properties of gases that are very important in the study of kinetic theory of gases are the following except',
+    //   options: ['Thermal expansion', 'Compressibility', 'Diffusibility', 'Composition'],
+    //   answer: ''
+    // },
+    // {
+    //   question: '',
+    //   options: [''],
+    //   answer: ''
+    // },
+    // {
+    //   question: '',
+    //   options: [''],
+    //   answer: ''
+    // },
+    // {
+    //   question: '',
+    //   options: [''],
+    //   answer: ''
+    // },
+    // {
+    //   question: '',
+    //   options: [''],
+    //   answer: ''
+    // },
+    // {
+    //   question: '',
+    //   options: [''],
+    //   answer: ''
+    // },
+    // {
+    //   question: '',
+    //   options: [''],
+    //   answer: ''
+    // },
+    // {
+    //   question: '',
+    //   options: [''],
+    //   answer: ''
+    // },
     // {
     //   question: '',
     //   options: [''],
