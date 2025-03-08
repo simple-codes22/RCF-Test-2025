@@ -43,7 +43,7 @@ const StartQuiz = ({ name, id }) => {
     const seconds = countdown % 60;
 
     return (
-      <div>
+      <div style={{ color: minutes < 2 ? 'red' : 'black', fontWeight: minutes < 2 ? 'bold' : 'normal' }}>
         {minutes < 10 ? '0' + minutes : minutes}:
         {seconds < 10 ? '0' + seconds : seconds}
       </div>
