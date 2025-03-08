@@ -27,6 +27,10 @@ const StartQuiz = ({ name, id }) => {
   }, []);
 
   useEffect(() => {
+    document.title = "CHM101: General Chemistry I";
+  })
+
+  useEffect(() => {
     if (countdown === 0) {
       console.log('Countdown finished!');
       setAutoSubmitted(true);

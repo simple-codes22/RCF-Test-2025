@@ -16,6 +16,10 @@ const StartQuiz = ({ name, id }) => {
   const timerRef = useRef(null);
 
   useEffect(() => {
+    document.title = "MAT101: Elementary Mathematics I";
+  })
+
+  useEffect(() => {
     if (!timerRef.current) {
       timerRef.current = setInterval(() => {
         setCountdown((prevCountdown) => prevCountdown - 1);
