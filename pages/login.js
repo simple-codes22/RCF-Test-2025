@@ -35,7 +35,7 @@ const Candx_login = () => {
     <div className={styles.body}>
       <Head>
         <link rel="icon" href="rcf_logo_172_X_155.png" />
-        <title>Login</title>
+        <title>RCF eTest Trials | Login</title>
       </Head>
       <div className={styles.login_bg}>
         <div className={styles.login_frame}>

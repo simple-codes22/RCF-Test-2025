@@ -149,7 +149,7 @@ const Results = () => {
             paddingBlock: '10px',
             fontSize: "30px",
             fontWeight: 600,
-            fontFamily: ""
+            fontFamily: "'Montserrat', sans-serif"
           }}>
             WELL DONE!
           </div>
